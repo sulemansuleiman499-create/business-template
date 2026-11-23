@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Business Template | Suleiman Suleiman</title>
+  <meta name="description" content="A responsive business website template built with Bootstrap 5.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { --brand: #4f46e5; --accent: #06b6d4; --ink: #0f172a; }
+    body { color: var(--ink); }
+    .hero { background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%); }
+    .btn-primary { --bs-btn-bg: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: #4338ca; --bs-btn-hover-border-color: #4338ca; }
+    .btn-outline-primary { --bs-btn-color: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: var(--brand); --bs-btn-hover-border-color: var(--brand); }
+    .btn-light { color: var(--brand); }
+    .card { border-radius: 1rem; transition: transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 .75rem 1.5rem rgba(15,23,42,.12) !important; }
+    .price-card.featured { border: 2px solid var(--brand); }
+    .display-6 { color: var(--brand); }
+    footer { background: var(--ink) !important; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Brightline Studio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero text-white py-5">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Your business, presented clearly on every device</h1>
+          <p class="lead mt-3">A responsive template for service businesses, with pricing, about and contact sections ready to customize.</p>
+          <a href="#contact" class="btn btn-light btn-lg mt-2">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <h2 class="h5 fw-bold">Fast delivery</h2>
+          <p class="text-muted">Clear timelines and milestone updates from start to finish.</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h5 fw-bold">Mobile first</h2>
+          <p class="text-muted">Layouts that adapt cleanly from phones to large desktop screens.</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h5 fw-bold">Easy to edit</h2>
+          <p class="text-muted">Clean, commented HTML and reusable sections for future updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Pricing</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card price-card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h3 class="h5">Starter</h3>
+              <p class="display-6 fw-bold">$299</p>
+              <ul class="list-unstyled text-muted">
+                <li>Up to 3 pages</li>
+                <li>Responsive layout</li>
+                <li>Contact form</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline-primary">Choose plan</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card price-card featured h-100 shadow">
+            <div class="card-body text-center">
+              <h3 class="h5">Business</h3>
+              <p class="display-6 fw-bold">$599</p>
+              <ul class="list-unstyled text-muted">
+                <li>Up to 6 pages</li>
+                <li>Reusable components</li>
+                <li>Basic SEO setup</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary">Choose plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h2 class="text-center fw-bold mb-4">Contact</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary w-100">Send message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white-50 text-center py-3">
+    <small>&copy; 2026 Brightline Studio. Template built by Suleiman Suleiman.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
